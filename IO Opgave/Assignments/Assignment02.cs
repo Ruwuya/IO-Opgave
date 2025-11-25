@@ -50,7 +50,7 @@ namespace IO_Opgave.Assignments
             // Recursively print all subfolders
             foreach (var subDir in Directory.GetDirectories(folder))
             {
-                // Indenting
+                // Increase indent for deeper levels
                 PrintTree(subDir, indentLevel + 1);
             }
 

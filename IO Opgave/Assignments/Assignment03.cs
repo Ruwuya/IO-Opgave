@@ -9,6 +9,7 @@ namespace IO_Opgave.Assignments
             // A program that automatically finds a route to traverse in a directory structure
             // then text is put together to one file.
 
+            // Asks user for absolute path or automatically finds path
             Console.WriteLine("Leave empty to automatically find root or,");
             Console.WriteLine("Please write the absolute path of the directory you want to traverse: ");
             string? userRootPath = Console.ReadLine();
@@ -38,6 +39,8 @@ namespace IO_Opgave.Assignments
 
             // Old test (Temporary)
             Console.WriteLine("Herro assignment 3");
+
+            // Waiting for user input before returning to menu
             Console.WriteLine("Press enter to return to the menu...");
             Console.ReadLine();
         }
@@ -50,7 +53,7 @@ namespace IO_Opgave.Assignments
             // Recursively print all subfolders
             foreach (var subDir in Directory.GetDirectories(folder))
             {
-                // Indenting
+                // Increase indent for deeper levels
                 PrintTree(subDir, indentLevel + 1);
             }
 
