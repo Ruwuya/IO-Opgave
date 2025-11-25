@@ -1,5 +1,4 @@
-﻿using System;
-using IO_Opgave.Services;
+﻿using IO_Opgave.Services;
 
 namespace IO_Opgave.Assignments
 {
